@@ -24,13 +24,14 @@
     .container {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 20vh 80vh 10vh 90vh 40vh 50vh;
+      grid-template-rows: 20vh 80vh 10vh 90vh 40vh 50vh 5vh;
       grid-template-areas: "header header header header"
                             "main-left main-left main-right main-right"
                             "curve curve curve curve"
                             "section-left section-left section-right section-right"
                             "bot-left bot-left bot-right bot-right"
-                            "footer-1 footer-2 footer-3 footer-4";
+                            "footer-1 footer-2 footer-3 footer-4"
+                            "foot foot foot foot";
     }
     header {
       grid-area: header;
@@ -85,6 +86,11 @@
     footer-4 {
       grid-area: footer-4;
       background-color: hsl(243, 87%, 12%);
+    }
+    foot {
+      grid-area: foot;
+      background-color: hsl(243, 87%, 12%);
+      color: white;
     }
     .header-menu {
       display: flex;
@@ -364,6 +370,13 @@
         </div>
       </div>
     </footer-4>
+
+    <foot>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="http://github.com/isaiasluc">Isaías Lucena</a>.
+      </p>
+    </foot>
   </div>
 
 </body>
